@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="javascript/js.js"></script>
+    <title>Portafolio responsivo</title>
+</head>
+<body>
+
+    <a href="#">
+        <img id="btnSubir" src="iconos/icono subir v7.png" alt="" width="50px" height="50px">
+    </a>
+    <header>
+        <input type="checkbox" id="checkMenu">
+        <label id="btnMenu" for="checkMenu">
+            <img id="imgBtnMenu" src="iconos/icono menu blanco transparente.png" alt="" width="50px" height="50px">
+        </label>
+
+        <div class="descripcion">
+            <div class="texto">
+                <h1>Ariel Varetto</h1>
+                <h2>Desarrollador Web</h2>
+                <p>"La vida comienza cuando decides ser tú mismo"</p>
+            </div>
+        </div>
+
+        <div class="foto">
+            <img id="imgFoto" src="imagenes/IMG_20210303_095829 v2 recortada.jpg" alt="">
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#indiceProyectos">Proyectos</a></li>
+                <li><a href="#indiceHabilidades">Habilidades</a></li>
+                <li><a href="#indiceContacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="contenedorProyecto">
+            <br id="indiceProyectos">
+            <br>
+            <br>
+            <h1>Proyectos</h1>
+            <br>
+            <div class="proyecto">
+                <div class="descripcionProyecto">
+                    <h2>Construcción</h2>
+                    <p>App para ingresar materiales y herramientas, como también préstamos de herramientas</p>
+                </div>
+                
+                <img class="imgProyecto" src="imagenes/imagen proyecto construccion.jpeg" alt="">
+                <button class="btnProyecto" onclick="clicProyectoConstruccion()">Ver más</button>
+            </div>
+        
+            <div class="proyecto">
+                <div class="descripcionProyecto">
+                    <h2>Juego Trivia</h2>
+                    <p>Una serie de preguntas según el tema que elijas y finalmente obtendrás una puntuación en el ranking</p>
+                </div>
+                
+                <img class="imgProyecto" src="imagenes/imagen proyecto trivia v2.png" alt="">
+                <button class="btnProyecto" onclick="clicProyectoTrivia()" >Ver más</button>
+            </div>
+            
+            <div class="proyecto">
+                <div class="descripcionProyecto">
+                    <h2>Bloc de notas</h2>
+                    <p>Permite crear notas rápidas y ordenarlas por categorías personalizadas</p>
+                </div>
+                
+                <img class="imgProyecto" src="imagenes/imagen proyecto bloc de notas.jpg" alt="">
+                <button class="btnProyecto" onclick="clicProyectoBloc()" >Ver más</button>
+            </div>
+            
+            <div class="proyecto">
+                <div class="descripcionProyecto">
+                    <h2>Calcular calorías</h2>
+                    <p>Entrega la cantidad de energía diaria que necesitas consumir según tu edad, estatura, sexo y actividad física</p>
+                </div>
+                
+                <img class="imgProyecto" src="imagenes/imagen proyecto calculadora calorias.jpg" alt="">
+                <button class="btnProyecto" id="btnProyectoCalorias" onclick="clicProyectoCalorias()">Ver más</button>
+            </div>
+        </div>
+
+        <div class="contenedorHabilidades">
+            <br id="indiceHabilidades">
+            <br>
+            <br>
+            <h1>Habilidades</h1>
+            <br>
+            <img class="iconoHabilidades" src="iconos/icono html v3.webp">
+
+            <img class="iconoHabilidades" src="iconos/icono css circular.webp">
+
+            <img class="iconoHabilidades" src="iconos/icono javascript circular.jpg">
+
+            <img class="iconoHabilidades" src="iconos/icono php v2.png">
+
+            <img class="iconoHabilidades" src="iconos/icono mysql circular.png">
+            <br>
+            <br>
+            <h2>Estoy aprendiendo</h2>
+            <img class="iconoHabilidades" src="iconos/icono github v5.jpg">
+            <br>
+            <br>
+            <h2>Quiero aprender...</h2>
+            <img class="iconoHabilidades" src="iconos/icono react circular v2.png">
+
+                <img class="iconoHabilidades" src="iconos/icono laravel circular v2.png">
+        </div>
+        
+        <div id="contenedorContacto">
+            <br id="indiceContacto">
+            <br>
+            <h1>Contacto</h1>
+            <img class="iconoRedes" src="iconos/icono mail circular.jpg" onclick="enviarCorreo();" >
+            <img class="iconoRedes" src="iconos/icono linkedin circular v2.png" onclick="enviarLinkedin();">
+            <img class="iconoRedes" src="iconos/icono github v5.jpg" onclick="enviarGithub()">
+            <img class="iconoRedes" src="iconos/icono instagram circular.jpg" onclick="enviarInstagram()">
+         
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="parrafoFooter">Desarrollado por Ariel Varetto, Chile 2021</p>
+        <br>
+        <br>
+    </footer>
+</body>
+</html>

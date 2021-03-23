@@ -1,0 +1,425 @@
+html{
+    background-color: white;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+    background-color: ;
+    
+    padding: 0px;
+    margin: 0px;
+    
+}
+header{
+    top: 0px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+#checkMenu{
+    display: none;
+}
+#btnMenu{
+    display: block;
+    position: fixed;
+    background-color: black;
+    z-index: 1000;
+}
+#btnMenu:hover{
+    cursor: pointer;
+}
+#btnSubir{
+    position: fixed;
+    display: block;
+    right: 15px;
+    bottom: 50px;
+    z-index: 1000;
+}
+
+.descripcion{
+    width: 100%;
+    height: ;
+    float: left;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.descripcion h1{
+    font-size: 40px;
+    color: white;
+}
+.descripcion h2{
+    font-size: 30px;
+    color: chartreuse;
+}
+.descripcion p{
+    font-size: 20px;
+    color: violet;
+}
+.foto{
+    width: 100%;
+    height: ;
+    float: left;
+    text-align: center;
+    background-color: black;
+}
+#imgFoto{
+    width: 70%;
+    height: ;
+    border-radius: 50%;
+}
+.menu{
+    width: 70%;
+    height: auto;
+    float: left;
+    background-color: blue;
+    position: fixed;
+    top: 54px;
+    z-index: 1000;
+    margin-left: -70%;
+    transition: all 1s;
+}
+.menu ul{
+    width: ;
+    margin: 0px; /*quita el margen del ul respecto a su contenedor*/
+    padding: 0px;
+    list-style: none;
+    background-color: red;
+    margin-left: ;
+}
+.menu ul li{
+    width: ;
+    background-color: green;
+}
+.menu ul li:hover{
+    cursor: pointer;
+    background-color: rgba(20, 250, 0, 0.7);
+
+}
+.menu ul li:hover a{
+    cursor: pointer;
+    color: black;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    display: block; /*permite que el 'a' ocupe todo el espacio del li*/
+}
+#checkMenu:checked ~ .menu{
+    margin-left: 0px;
+}
+/*main*/
+main{
+    
+}
+main h1{
+    font-size: 40px;
+    color: chartreuse;
+}
+main h2{
+    font-size: 30px;
+    color: violet;
+}
+main p{
+    font-size: 20px;
+    color: white;
+}
+.contenedorProyecto{
+    width: 100%;
+    float: left;
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+.contenedorProyecto h2{
+    font-size: 35px;
+    color: black;
+}
+.contenedorProyecto p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.proyecto{
+    width: 96%;
+    height: 300px;
+    margin: 2%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative; /*permite que el hijo use position:absolute*/
+}
+
+.descripcionProyecto{
+    width: 94%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 40%;
+}
+.imgProyecto{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.btnProyecto{
+    cursor: pointer;
+    position: absolute;
+    background-color: violet;
+    bottom: 0px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.btnProyecto:hover{
+    background-color: chartreuse;
+ }
+.btnProyecto:focus{
+   background-color: chartreuse;
+}
+
+.contenedorHabilidades{
+    width: 100%;
+    float: left;
+    background-color: black;
+    text-align: center;
+}
+.iconoHabilidades{
+    width: 49%;
+    height: 100%;
+}
+#contenedorContacto{
+    width: 100%;
+    float: left;
+    background-color: black;
+    text-align: center;
+}
+.iconoRedes{
+    width: 20%;
+    height: 100%;
+    margin: 5px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.iconoRedes:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+footer{
+    width: 100%;
+    float: left;
+    background-color: black;
+    text-align: center;
+}
+.parrafoFooter{
+    font-size: 20px;
+    color: violet;
+}
+
+
+@media (min-width:600px) and (max-width:767px){
+    /*botones*/
+    #imgBtnMenu{
+        width: 100px;
+        height: 100px;
+    }
+    #btnSubir{
+        width: 100px;
+        height: 100px;
+    }
+    #menu{
+        top: 104px;
+    }
+    #menu ul li a{
+        font-size: 80px;
+    }
+
+    .descripcion{
+        background-color: black;
+    }
+    .descripcion h1{
+        font-size: 80px;
+        color: white;
+    }
+    .descripcion h2{
+        font-size: 60px;
+        color: chartreuse;
+    }
+    .descripcion p{
+        font-size: 40px;
+        color: violet;
+    }
+    #menu li{
+        font-size: 100px;
+    }
+
+    main h1{
+        font-size: 80px;
+        color: chartreuse;
+    }
+    main h2{
+        font-size: 60px;
+        color: violet;
+    }
+    main p{
+        font-size: 40px;
+        color: white;
+    }
+    .proyecto{
+        height: 400px;
+    }
+    .proyecto p{
+        font-size: 35px;
+    }
+    .btnProyecto{
+        font-size: 40px;
+    }
+    .parrafoFooter{
+        font-size: 35px;
+        color: violet;
+    }
+}
+
+@media (min-width:768px){
+    .descripcion{
+        background-color: black;
+    }
+    #imgBtnMenu{
+        display: none;
+    }
+    .descripcion{
+        width: 50%;
+        height: 200px;
+    }
+    .foto{
+        width: 50%;
+        height: 200px;
+        background-color: black;
+    }
+    #imgFoto{
+        width: 180px;
+        height: 180px;
+        padding: 10px; 
+    }
+    .menu{
+        width: 100%;
+        height: 34px;
+        left: 70%;
+        float: left;
+        top: 200px;
+
+        position: absolute;
+        background-color: black;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        transition: none;
+    }
+    /*menu fixed*/
+    .menu-fixed{
+        width: 100%;
+        height: auto;
+        float:left;
+
+        top: 0;
+        position: fixed;
+        z-index: 1001;
+        
+        background-color: black;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        transition: none;
+    }
+    .menu-fixed ul{
+        background-color: black;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .menu-fixed ul li{
+        background-color: black;
+    }
+    .menu-fixed ul li a{
+        text-decoration: none;
+        color: white;
+        display: block; /*permite que el 'a' ocupe todo el espacio del li*/
+
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    .menu-fixed ul li:hover{
+        cursor: pointer;
+        background-color: rgba(20, 250, 0, 0.7);
+    }
+    .menu-fixed ul li:hover a{
+        cursor: pointer;
+        color: black;
+    }
+    
+
+    #menuAnterior{
+        width: 70%;
+        height: auto;
+        float: left;
+        background-color: blue;
+        position: fixed;
+        top: 104px;
+        z-index: 1000;
+        margin-left: -70%;
+        transition: all 1s;
+    }
+    .menu ul{
+        background-color: black;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu ul li{
+        background-color: black;
+    }
+    .menu ul li a{
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    .proyecto{
+        width: 46%;
+        margin: 2%;
+        float: left;
+    }
+    .contenedorProyecto h2{
+        font-size: 30px;
+        color: black;
+    }
+    .contenedorProyecto p{
+        font-size: 16px;
+        color: black;
+    }
+    .descripcionProyecto{
+        width: 94%;
+        height: 150px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 40%;
+    }
+    .iconoHabilidades{
+        width: 15%;
+        margin: 2%;
+    }
+    .iconoRedes{
+        width: 10%;
+        margin: 2%;
+    }
+}
